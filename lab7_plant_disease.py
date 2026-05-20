@@ -11,11 +11,16 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow.keras import layers, models
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+import kagglehub
+
+path = kagglehub.dataset_download("emmarex/plantdisease")
+
+print("Path to dataset files:", path)
 
 IMG_SIZE  = (64, 64)
 BATCH     = 32
 EPOCHS    = 10
-DATA_DIR  = 'plant_data'   # folder with subfolders per class
+DATA_DIR  = path
 
 # ── Data generators with augmentation ────────────────────
 gen = ImageDataGenerator(
