@@ -18,7 +18,7 @@ path = kagglehub.dataset_download("emmarex/plantdisease")
 print("Path to dataset files:", path)
 
 IMG_SIZE  = (64, 64)
-BATCH     = 32
+BATCH     = 128
 EPOCHS    = 10
 DATA_DIR  = path
 
