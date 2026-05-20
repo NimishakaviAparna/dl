@@ -110,6 +110,7 @@ What is Iris dataset?
 Famous dataset with 150 samples, 3 classes (Setosa, Versicolor, Virginica), 4 features (sepal length/width, petal length/width).
 
 lab 4
+
 What is Bayes theorem?
 ›
 P(A|B) = P(B|A) × P(A) / P(B). In classification: P(class|features) ∝ P(features|class) × P(class).
@@ -131,6 +132,7 @@ Fast, works well with small data, handles high dimensions well, good baseline fo
 
 
 lab 5
+
 How does a Decision Tree split?
 ›
 Finds the feature and threshold that maximizes information gain (or minimizes Gini impurity) at each node.
@@ -155,6 +157,7 @@ Measure of how often a randomly chosen element would be misclassified. 0 = pure 
 
 
 lab 6
+
 mnist.load_data()
 Downloads MNIST: 60k train + 10k test images of handwritten digits 0–9.
 X_tr.reshape(-1, 28, 28, 1)
@@ -202,6 +205,7 @@ sparse: labels are integers (0,1,2...). categorical: labels are one-hot encoded 
 
 
 lab 7
+
 ImageDataGenerator(rescale=1./255, rotation_range=20, horizontal_flip=True)
 Data augmentation: rescales pixels to 0-1, randomly rotates ±20°, flips horizontally. Creates more training variety.
 flow_from_directory('plant_data', target_size=(64,64))
@@ -245,6 +249,7 @@ Using a pre-trained model (like VGG, ResNet) as base and fine-tuning for new tas
 
 
 lab 8
+
 names = [...]
 10 clothing category names corresponding to labels 0–9.
 X_tr[..., np.newaxis]
@@ -287,6 +292,7 @@ One complete pass through the entire training dataset. Multiple epochs allow the
 
 
 lab 9
+
 df['Close'].values.reshape(-1,1)
 Get closing prices as column vector. reshape needed for MinMaxScaler.
 MinMaxScaler()
@@ -327,6 +333,7 @@ Common heuristic for stock data (~3 trading months). Model sees 60 previous days
 
 
 lab 10
+
 df['Temperature'].values.reshape(-1,1)
 Extract temperature column as 2D array for scaler.
 MinMaxScaler() + fit_transform
